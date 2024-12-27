@@ -27,7 +27,8 @@ def extract_gcode_data(gcode_path):
         "filament_cost": r"filament cost=([0-9.]+)",
         "filament_used_cm3": r"filament used \[cm3\]=([0-9.]+)",
         "total_filament_used_wipe_tower_g": r"total filament used for wipe tower \[g\]=([0-9.]+)",
-        "estimated_printing_time": r"estimated printing time \(normal mode\)=([0-9m\s0-9s]+)"
+        "estimated_printing_time": r"estimated printing time \(normal mode\)=([0-9m\s0-9s]+)",
+        "filament_type": r"filament_type=([A-Za-z0-9_]+)"  # Added regex to capture filament type
     }
 
     extracted_data = {}
@@ -35,7 +36,9 @@ def extract_gcode_data(gcode_path):
     for key, pattern in patterns.items():
         match = re.search(pattern, gcode_content)
         if match:
-            extracted_data[key] = match.group(1)
+            value = match.group(1)
+            value = value.strip()
+            extracted_data[key] = value
         else:
             extracted_data[key] = None
 
@@ -70,7 +73,7 @@ def upload_file():
         # Extract the data from the generated G-code file
         gcode_data = extract_gcode_data(output_path)
 
-        return jsonify({"data": gcode_data}), 200
+        return jsonify(gcode_data), 200
     else:
         return jsonify({"error": "Invalid file type"}), 400
 
