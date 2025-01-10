@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest.loader._FailedTest-20250105181431" tests="1" file="unittest/loader.py" time="0.002" timestamp="2025-01-05T18:14:31" failures="0" errors="1" skipped="0">
+	<testcase classname="unittest.loader._FailedTest" name="server_tests" time="0.002" timestamp="2025-01-05T18:14:31">
+		<error type="ImportError" message="Failed to import test module: server_tests
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3.12/unittest/loader.py&quot;, line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/sam-kan/Documents/GitHub/prusaslicer_server/src/unittest/python/server_tests.py&quot;, line 2, in &lt;module&gt;
+    from src.main.python.server import app
+ModuleNotFoundError: No module named 'src'
+"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.12/unittest/case.py", line 58, in testPartExecutor
+    yield
+  File "/usr/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+    ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+    ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/loader.py", line 33, in testFailure
+    raise self._exception
+    ^^^^^^^^^^^^^^^^^
+ImportError: Failed to import test module: server_tests
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sam-kan/Documents/GitHub/prusaslicer_server/src/unittest/python/server_tests.py", line 2, in <module>
+    from src.main.python.server import app
+ModuleNotFoundError: No module named 'src'
+
+]]></error>
+	</testcase>
+</testsuite>

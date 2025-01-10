@@ -1,0 +1,38 @@
+running clean
+'build/temp.linux-x86_64-cpython-312' does not exist -- can't clean it
+'build/lib' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-3.12' does not exist -- can't clean it
+running sdist
+running egg_info
+creating prusaslicer_server.egg-info
+writing prusaslicer_server.egg-info/PKG-INFO
+writing dependency_links to prusaslicer_server.egg-info/dependency_links.txt
+writing namespace_packages to prusaslicer_server.egg-info/namespace_packages.txt
+writing top-level names to prusaslicer_server.egg-info/top_level.txt
+writing manifest file 'prusaslicer_server.egg-info/SOURCES.txt'
+reading manifest file 'prusaslicer_server.egg-info/SOURCES.txt'
+writing manifest file 'prusaslicer_server.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating prusaslicer_server-1.0.dev0
+creating prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+copying files to prusaslicer_server-1.0.dev0...
+copying server.py -> prusaslicer_server-1.0.dev0
+copying setup.py -> prusaslicer_server-1.0.dev0
+copying prusaslicer_server.egg-info/PKG-INFO -> prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+copying prusaslicer_server.egg-info/SOURCES.txt -> prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+copying prusaslicer_server.egg-info/dependency_links.txt -> prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+copying prusaslicer_server.egg-info/namespace_packages.txt -> prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+copying prusaslicer_server.egg-info/top_level.txt -> prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+copying prusaslicer_server.egg-info/zip-safe -> prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+copying prusaslicer_server.egg-info/SOURCES.txt -> prusaslicer_server-1.0.dev0/prusaslicer_server.egg-info
+Reading configuration from prusaslicer_server-1.0.dev0/setup.cfg
+Adding new section [egg_info] to prusaslicer_server-1.0.dev0/setup.cfg
+Setting egg_info.tag_build to '' in prusaslicer_server-1.0.dev0/setup.cfg
+Setting egg_info.tag_date to 0 in prusaslicer_server-1.0.dev0/setup.cfg
+Writing prusaslicer_server-1.0.dev0/setup.cfg
+creating dist
+Creating tar archive
+removing 'prusaslicer_server-1.0.dev0' (and everything under it)

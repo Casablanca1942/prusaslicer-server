@@ -1,0 +1,8 @@
+server.py
+setup.py
+prusaslicer_server.egg-info/PKG-INFO
+prusaslicer_server.egg-info/SOURCES.txt
+prusaslicer_server.egg-info/dependency_links.txt
+prusaslicer_server.egg-info/namespace_packages.txt
+prusaslicer_server.egg-info/top_level.txt
+prusaslicer_server.egg-info/zip-safe
